@@ -11,6 +11,7 @@ Source:             gru-%{version}.tar.gz
 URL:                http://uriparser.sourceforge.net/
 BuildRequires:      autoconf
 BuildRequires:      automake
+BuildRequires:      libtool
 BuildRequires:      make
 BuildRequires:      gcc
 BuildRequires:      doxygen

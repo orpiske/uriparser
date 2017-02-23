@@ -43,6 +43,7 @@ make install
 %files
 %doc AUTHORS COPYING
 %{_libdir}/*
+%{_bindir}/*
 
 
 %files devel

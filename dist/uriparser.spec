@@ -42,9 +42,8 @@ make install
 
 %files
 %doc AUTHORS COPYING
-%{_libdir}/*
-%{_bindir}/*
-
+%{_libdir}/lib*
+%exclude %{_bindir}/*
 
 %files devel
 %{_includedir}/*

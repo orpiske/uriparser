@@ -9,7 +9,8 @@ License:            BSD
 Group:              Development/Tools
 Source:             gru-%{version}.tar.gz
 URL:                http://uriparser.sourceforge.net/
-BuildRequires:      autogen
+BuildRequires:      autoconf
+BuildRequires:      automake
 BuildRequires:      make
 BuildRequires:      gcc
 BuildRequires:      doxygen

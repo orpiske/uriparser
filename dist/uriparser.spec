@@ -32,7 +32,7 @@ Development packages for the URI parsing utility
 
 %build
 ./autogen.sh
-./configure --prefix=%{buildroot}/usr
+./configure --disable-test --disable-doc --prefix=%{buildroot}/usr
 make
 
 %install
@@ -45,10 +45,6 @@ make install
 
 %files devel
 %{_includedir}/*
-
-%files devel-docs
-%{_datadir}/*
-
 
 %changelog
 * Tue Feb 23 2017 Otavio R. Piske <angusyoung@gmail.com> - 20170223

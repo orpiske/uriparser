@@ -34,12 +34,14 @@ Development packages for the URI parsing utility
 
 %build
 ./autogen.sh
-./configure --disable-test --disable-doc --prefix=%{buildroot}/usr
+./configure --disable-test --disable-doc --prefix=%{buildroot}/usr --libdir=%{buildroot}/usr/%{_lib}
 make
 
 %install
 make install
-rm -rf %{buildroot}/usr/bin/uriparser %{buildroot}/usr/%{_lib}/pkg*
+rm -rf %{buildroot}/usr/bin/uriparse
+rm -rf %{buildroot}/usr/%{_lib}/liburiparser.la
+rm -rf %{buildroot}/usr/%{_lib}/pkg*
 
 %files
 %doc AUTHORS COPYING

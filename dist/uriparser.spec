@@ -39,7 +39,7 @@ make
 
 %install
 make install
-rm -rf %{_bindir} %{_libdir}/pkg*
+rm -rf %{buildroot}/usr/bin/uriparser %{buildroot}/usr/%{_lib}/pkg*
 
 %files
 %doc AUTHORS COPYING

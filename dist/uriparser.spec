@@ -7,7 +7,7 @@ Version:            0.8.4
 Release:            1%{?dist}
 License:            BSD
 Group:              Development/Tools
-Source:             gru-%{version}.tar.gz
+Source:             uriparser-%{version}.tar.gz
 URL:                http://uriparser.sourceforge.net/
 BuildRequires:      autoconf
 BuildRequires:      automake

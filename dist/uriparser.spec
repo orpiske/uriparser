@@ -39,11 +39,11 @@ make
 
 %install
 make install
+rm -rf %{_bindir} %{_libdir}/pkg*
 
 %files
 %doc AUTHORS COPYING
 %{_libdir}/lib*
-%exclude %{_bindir}/*
 
 %files devel
 %{_includedir}/*

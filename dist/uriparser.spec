@@ -4,7 +4,7 @@
 Summary:            URIparser library
 Name:               uriparser
 Version:            0.8.4
-Release:            1%{?dist}
+Release:            2%{?dist}
 License:            BSD
 Group:              Development/Tools
 Source:             uriparser-%{version}.tar.gz
@@ -24,6 +24,7 @@ Uriparser is a strictly RFC 3986 compliant URI parsing library written in C. uri
 %package devel
 Summary:            URI parsing utility development kit
 Requires:           gcc
+Requires:           uriparser
 Group:              Development/Libraries
 
 %description devel
